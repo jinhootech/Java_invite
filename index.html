@@ -1,84 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Henry & Ruby - Wedding</title>
-    <link rel="stylesheet" href="css/style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chi & Goodness Wedding</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="overlay"><div class="menu-container"><button id="menu-toggle" class="menu-toggle">☰</button></div>
-            <h1>Henry & Ruby</h1>
-            
-            <div class="countdown" id="timer">
-                <div class="time-segment">
-                    <div class="number" id="days">00</div>
-                    <div class="label">Days</div>
-                </div>
-                <div class="time-segment">
-                    <div class="number" id="hours">00</div>
-                    <div class="label">Hours</div>
-                </div>
-                <div class="time-segment">
-                    <div class="number" id="minutes">00</div>
-                    <div class="label">Minutes</div>
-                </div>
-                <div class="time-segment">
-                    <div class="number" id="seconds">00</div>
-                    <div class="label">Seconds</div>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="story.html">Our Story</a></li>
-                    <li><a href="details.html">Wedding Details</a></li>
-                    <li><a href="program.html">Wedding Program</a></li>
-                    <!-- <li><a href="travel.html">Travel & Lodging</a></li> -->
-                    <li><a href="rsvp.html">RSVP</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="donations.html">Gift Registry & Donations</a></li>
-                    <!-- <li><a href="messages.html">Messages</a></li> -->
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="welcome">
-            <h2>Welcome</h2>
-            <p class="subtitle">Save the date</p>
-            <p>We're getting married on <strong>June 28, 2025</strong></p>
-        </section>
+  <header>
+    <h1>Chiamaka & Chinedu</h1>
+    <p class="date">28th December 2025 • 1PM</p>
+    <p class="venue">KOBB Civic Centre, Shoprite Enugu</p>
+    <div class="colors">
+      <span class="color white"></span>
+      <span class="color green"></span>
+      <span class="color brown"></span>
+      <span class="color gold"></span>
+      <span class="color-label">Colors: White, Green, Brown & Gold</span>
+    </div>
+    <div id="countdown"></div>
+  </header>
 
-        <section class="preview">
-            <h3>Our Story</h3>
-            <p>So it all started at the gym… From a skipping contest to finding true love.</p>
-        </section>
+  <section id="story">
+    <h2>Our Love Story</h2>
+    <blockquote>
+      “She came for her friend’s wedding, but she left with my heart.” <br>
+      <span>And now, we’re planning ours, not just our wedding but it’s for Eternity.</span>
+    </blockquote>
+  </section>
 
-        <section class="preview">
-            <h3>Wedding Details</h3>
-            <div class="details">
-                <div>
-                    <h4>Church Service</h4>
-                    <p>June 28, 2025 at 11:00 am</p>
-                    <p>St. Mary Catholic Church, Trans-Ekulu Enugu, Nigeria</p>
-                </div>
-                <div>
-                    <h4>Reception</h4>
-                    <p>June 28, 2025 at 2:00 pm</p>
-                    <p>Wicker Park Event Center, Trans-Ekulu Opp Grand Pavilion Hotel Enugu, Nigeria</p>
-                </div>
-            </div>
-        </section>
+  <section id="photos">
+    <h2>Photos</h2>
+    <div class="photos-wrapper">
+      <img src="images/1.jpg" alt="Our photo 1">
+      <img src="images/2.jpg" alt="Our photo 2">
+    </div>
+  </section>
 
-        <section class="actions">
-            <a href="rsvp.html" class="button green">✔ RSVP Online</a>
-            <a href="gallery.html" class="button mauve">📷 View Photos</a>
-            <a href="messages.html" class="button green">💌 Leave a Message</a>
-            <a href="donations.html" class="button burgundy">❤️ Donate</a>
-        </section>
-    </main>
-    <script src="js/script.js"></script>
+  <section id="venue">
+    <h2>Venue & Live Location</h2>
+    <p>KOBB Civic Centre, Shoprite Enugu</p>
+    <a class="map-btn" target="_blank" href="https://maps.app.goo.gl/JzN8rnj5GGLq8guN9">View Venue Location</a>
+    <div class="map-embed">
+      <iframe src="https://maps.google.com/maps?q=KOBB%20Civic%20Centre%20Shoprite%20Enugu&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section id="rsvp">
+    <h2>RSVP</h2>
+    <p>Kindly confirm your attendance:</p>
+    <ul>
+      <li>Chi: <a href="tel:07080516852">07080516852</a></li>
+      <li>Goodness: <a href="tel:08105540863">08105540863</a></li>
+    </ul>
+  </section>
+
+  <section id="message">
+    <h2>Send Us a Message</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p class="form-note">We'd love to hear from you!</p>
+  </section>
+
+  <section id="social">
+    <h2>Share Your Moments</h2>
+    <p>
+      Tag your photos on Instagram with 
+      <b>#ChiAndGoodness2025</b><br>
+      <a href="https://instagram.com/explore/tags/ChiAndGoodness2025" target="_blank">
+        View the hashtag
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Chiamaka & Chinedu. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Countdown Timer Script
+    const countDownDate = new Date("Dec 28, 2025 13:00:00").getTime();
+    const countdown = document.getElementById("countdown");
+    setInterval(function() {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      countdown.innerHTML = 
+        `<div class="count"><span>${days}</span><br>Days</div>
+         <div class="count"><span>${hours}</span><br>Hours</div>
+         <div class="count"><span>${minutes}</span><br>Minutes</div>
+         <div class="count"><span>${seconds}</span><br>Seconds</div>`;
+      if (distance < 0) {
+        countdown.innerHTML = "<div class='count over'>Wedding Started!</div>";
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
