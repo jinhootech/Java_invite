@@ -25,13 +25,17 @@
 
 </head>
 <body>
-  <header id="custom-hero">
-    <div class="hero-content-bottom">
-        <div class="hero-join-text">Please join us to celebrate</div>
-        <div class="hero-names">Chiamaka &amp; Chinedu</div>
-        <div class="hero-details">28th December 2025 &bull; Enugu, Nigeria</div>
+  
+  <header id="custom-hero-bg">
+    <div class="header-overlay">
+      <div class="header-content">
+        <div class="hero-join-text header-join-text">Please join us to celebrate</div>
+        <div class="hero-names header-names">Chiamaka &amp; Chinedu</div>
+        <div class="hero-details header-details">28th Dec 2025 &bull; Enugu, Nigeria</div>
+      </div>
     </div>
   </header>
+
 
   <section id="story">
     <h2 class="story-title">Our Story</h2>
@@ -162,29 +166,34 @@
         <div class="colour-dot brown"></div>
       </div>
     </div>
-    <div class="colours-labels">
-      <div class="colour-label">
-        <span class="label-dot gold"></span> Gold
+    <div class="colors-label-row">
+      <div class="color-label">
+        <span class="color-bar gold"></span>
+        <div>Gold</div>
       </div>
-      <div class="colour-label">
-        <span class="label-dot green"></span> Green
+      <div class="color-label">
+        <span class="color-bar emerald"></span>
+        <div>Green</div>
       </div>
-      <div class="colour-label">
-        <span class="label-dot white"></span> White
+      <div class="color-label">
+        <span class="color-bar white"></span>
+        <div>White</div>
       </div>
-      <div class="colour-label">
-        <span class="label-dot brown"></span> Brown
+      <div class="color-label">
+        <span class="color-bar pink"></span>
+        <div>Brown</div>
       </div>
     </div>
+
   </section>
 
 
   <!-- RSVP  -->
   <section id="rsvp">
     <div class="rsvp-heading">
-      <img src="images/floral.png" class="rsvp-floral" alt="">
+      <img src="images/floral.jpg" class="rsvp-floral" alt="">
       <h2>RSVP</h2>
-      <img src="images/floral.png" class="rsvp-floral" alt="">
+      <img src="images/floral.jpg" class="rsvp-floral" alt="">
     </div>
     <div class="rsvp-list">
       <div class="rsvp-card">
@@ -201,7 +210,7 @@
   </section>
 
   <!-- Message  -->
-  <section id="message">
+  <section id="message" style="margin: 20px;">
     <h2 style="margin-left: 20px;">Send Us a Message</h2>
     <form action="https://formspree.io/f/movljbkj" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
@@ -215,7 +224,7 @@
     <!-- Venue section  -->
   <section id="venue">
     <h2 style="margin-left: 20px;">Venue & Live Location</h2>
-    <p>KOBB Civic Centre, Shoprite Enugu</p>
+    <p style="margin: 20px;">KOBB Civic Centre, Shoprite Enugu</p>
     <!-- <a class="map-btn" target="_blank" href="https://maps.app.goo.gl/JzN8rnj5GGLq8guN9">View Venue Location</a> -->
     <div class="map-embed">
       <iframe src="https://maps.google.com/maps?q=KOBB%20Civic%20Centre%20Shoprite%20Enugu&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -223,33 +232,32 @@
     </div>
   </section>
 
-  <section id="social">
-    <h2>Share Your Moments</h2>
+  <section id="social" style="margin: 20px;">
+    <h2 style="margin: 20px;">Share Your Moments</h2>
     <p>
       Tag your photos on Instagram with 
-      <b>#Above4Chi</b><br>
-      <a href="https://instagram.com/explore/tags/ChiAndGoodness2025" target="_blank">
+      <b>#Above4Chi2025</b><br>
+      <a href="https://instagram.com/explore/tags/Above4Chi2025" target="_blank">
         View the hashtag
       </a>
     </p>
   </section>
 
   <!-- Photo and countdown section  -->
-  <section id="hero-save-date">
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <div class="hero-save">Save The Date</div>
-        <div class="hero-names">Chiamaka & Chinedu</div>
-        <div class="hero-details">28th December 2025 &bull; Enugu, Nigeria</div>
-        <div id="hero-countdown"></div>
+  <section id="save-the-date">
+    <div class="save-date-overlay">
+      <div class="save-date-content">
+        <div class="save-date-script">Save The Date</div>
+        <div class="save-date-names">Chiamaka &amp; Chinedu</div>
+        <div class="save-date-details">28th Dec 2025 &bull; Enugu, Nigeria</div>
+        <div id="save-date-countdown"></div>
       </div>
     </div>
   </section>
 
 
-  <footer>
-    <p>© 2025 Chiamaka & Chinedu. All Rights Reserved.</p>
-  </footer>
+
+
 
   <script>
   // Main wedding countdown
@@ -293,24 +301,25 @@
     }, 1000);
   </script>
 
-  <script>
-  // Hero Section Countdown
-  const heroCountDownDate = new Date("Dec 28, 2025 13:00:00").getTime();
-  const heroCountdown = document.getElementById("hero-countdown");
+ <script>
+  // Save The Date Countdown
+  const saveDateCountDownDate = new Date("Dec 28, 2025 13:00:00").getTime();
+  const saveDateCountdown = document.getElementById("save-date-countdown");
   setInterval(function() {
     const now = new Date().getTime();
-    const distance = heroCountDownDate - now;
+    const distance = saveDateCountDownDate - now;
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    heroCountdown.innerHTML =
+    saveDateCountdown.innerHTML =
       `<span>${days}D</span> <span>${hours}H</span> <span>${minutes}M</span> <span>${seconds}S</span>`;
     if (distance < 0) {
-      heroCountdown.innerHTML = "<span>Today is the day!</span>";
+      saveDateCountdown.innerHTML = "<span>It's the big day!</span>";
     }
   }, 1000);
 </script>
+
 
 </body>
 </html>
