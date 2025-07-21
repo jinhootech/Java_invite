@@ -646,3 +646,89 @@ footer {
   .timeline-icon { min-width: 38px; min-height: 38px; width: 38px; height: 38px; }
   .timeline-icon img, .timeline-icon svg { width: 22px; height: 22px; }
 }
+
+
+
+/* countdown and photo */
+#hero-save-date {
+  width: 100vw;
+  min-height: 75vh;
+  height: 650px;
+  max-height: 95vh;
+  position: relative;
+  background: url('../images/1.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(40,30,25,0.17) 40%, rgba(33,33,33,0.26) 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  text-shadow: 0 3px 16px rgba(0,0,0,0.27);
+  position: relative;
+}
+.hero-save {
+  color: #ff84b8;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: 'Montserrat', cursive, serif;
+  margin-bottom: 0.7em;
+  letter-spacing: 0.07em;
+}
+.hero-names {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 0.18em;
+  letter-spacing: 0.08em;
+  line-height: 1.12;
+}
+.hero-details {
+  font-size: 1.08em;
+  color: #fff;
+  font-family: 'Montserrat', serif;
+  margin-bottom: 1.7em;
+  font-weight: 500;
+}
+#hero-countdown {
+  font-size: 2em;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin-top: 1.2em;
+  display: flex;
+  justify-content: center;
+  gap: 1.1em;
+}
+#hero-countdown span {
+  min-width: 52px;
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  #hero-save-date {
+    height: 350px;
+    min-height: 290px;
+  }
+  .hero-names {
+    font-size: 1.45em;
+  }
+  .hero-content { padding: 0 0.7em; }
+  #hero-countdown {
+    font-size: 1.15em;
+    gap: 0.3em;
+  }
+  #hero-countdown span { min-width: 25px; }
+}

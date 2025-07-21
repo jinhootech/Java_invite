@@ -42,20 +42,11 @@
     <div class="timeline-card">
       <span class="timeline-icon">
         <!-- Calendar/Church SVG icon (example, replace as needed) -->
-        <img src="images/church.svg" alt="Church Service">
+        <img src="images/group.svg" alt="Guest arrival">
       </span>
       <div class="timeline-details">
-        <div class="timeline-time">10:00 <span>AM</span></div>
-        <div class="timeline-event">Church Service</div>
-      </div>
-    </div>
-    <div class="timeline-card">
-      <span class="timeline-icon">
-        <img src="images/bell.svg" alt="Guest Arrival">
-      </span>
-      <div class="timeline-details">
-        <div class="timeline-time">3:00 <span>PM</span></div>
-        <div class="timeline-event">Guest Arrives At Reception</div>
+        <div class="timeline-time">1:00 <span>PM</span></div>
+        <div class="timeline-event">Guest Arrival</div>
       </div>
     </div>
     <div class="timeline-card">
@@ -63,7 +54,7 @@
         <img src="images/group.svg" alt="Families Entrance">
       </span>
       <div class="timeline-details">
-        <div class="timeline-time">3:30 <span>PM</span></div>
+        <div class="timeline-time">1:30 <span>PM</span></div>
         <div class="timeline-event">Families Of The Couple Entrance</div>
       </div>
     </div>
@@ -72,8 +63,8 @@
         <img src="images/couple.svg" alt="Couple Arrival">
       </span>
       <div class="timeline-details">
-        <div class="timeline-time">4:00 <span>PM</span></div>
-        <div class="timeline-event">Arrival Of The Couple</div>
+        <div class="timeline-time">2:00 <span>PM</span></div>
+        <div class="timeline-event">Arrival Of Latest Couple</div>
       </div>
     </div>
     <div class="timeline-card">
@@ -81,8 +72,26 @@
         <img src="images/music.svg" alt="First Dance">
       </span>
       <div class="timeline-details">
-        <div class="timeline-time">5:00 <span>PM</span></div>
+        <div class="timeline-time">3:00 <span>PM</span></div>
         <div class="timeline-event">Couple First Dance</div>
+      </div>
+    </div>
+    <div class="timeline-card">
+      <span class="timeline-icon">
+        <img src="images/music.svg" alt="Guest Arrival">
+      </span>
+      <div class="timeline-details">
+        <div class="timeline-time">4:00 <span>PM</span></div>
+        <div class="timeline-event">Couple Second Dance</div>
+      </div>
+    </div>
+    <div class="timeline-card">
+      <span class="timeline-icon">
+        <img src="images/music.svg" alt="Guest Arrival">
+      </span>
+      <div class="timeline-details">
+        <div class="timeline-time">5:00 <span>PM</span></div>
+        <div class="timeline-event">After Party</div>
       </div>
     </div>
   </section>
@@ -107,7 +116,7 @@
         <span class="label-dot gold"></span> Gold
       </div>
       <div class="colour-label">
-        <span class="label-dot green"></span> Emerald Green
+        <span class="label-dot green"></span> Green
       </div>
       <div class="colour-label">
         <span class="label-dot white"></span> White
@@ -129,13 +138,13 @@
     <div class="rsvp-list">
       <div class="rsvp-card">
         <img src="images/avatar.png" alt="RSVP Contact" class="rsvp-avatar">
-        <div class="rsvp-phone">0706 764 0885</div>
-        <div class="rsvp-name">Nwachukwu</div>
+        <div class="rsvp-phone">0708 051 6852</div>
+        <div class="rsvp-name">Chi</div>
       </div>
       <div class="rsvp-card">
         <img src="images/avatar.png" alt="RSVP Contact" class="rsvp-avatar">
-        <div class="rsvp-phone">0810 901 2874</div>
-        <div class="rsvp-name">Emilia</div>
+        <div class="rsvp-phone">0810 554 0863</div>
+        <div class="rsvp-name">Goodness</div>
       </div>
     </div>
   </section>
@@ -174,6 +183,19 @@
     </p>
   </section>
 
+  <!-- Photo and countdown section  -->
+  <section id="hero-save-date">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <div class="hero-save">Save The Date</div>
+        <div class="hero-names">Chiamaka & Chinedu</div>
+        <div class="hero-details">28th December 2025 &bull; Enugu, Nigeria</div>
+        <div id="hero-countdown"></div>
+      </div>
+    </div>
+  </section>
+
+
   <footer>
     <p>© 2025 Chiamaka & Chinedu. All Rights Reserved.</p>
   </footer>
@@ -199,5 +221,25 @@
       }
     }, 1000);
   </script>
+
+  <script>
+  // Hero Section Countdown
+  const heroCountDownDate = new Date("Dec 28, 2025 13:00:00").getTime();
+  const heroCountdown = document.getElementById("hero-countdown");
+  setInterval(function() {
+    const now = new Date().getTime();
+    const distance = heroCountDownDate - now;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    heroCountdown.innerHTML =
+      `<span>${days}D</span> <span>${hours}H</span> <span>${minutes}M</span> <span>${seconds}S</span>`;
+    if (distance < 0) {
+      heroCountdown.innerHTML = "<span>Today is the day!</span>";
+    }
+  }, 1000);
+</script>
+
 </body>
 </html>
