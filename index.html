@@ -14,14 +14,6 @@
     <h1>Chiamaka & Chinedu</h1>
     <p class="date">28th December 2025 • 1PM</p>
     <p class="venue">KOBB Civic Centre, Shoprite Enugu</p>
-    <div class="colors">
-      <span class="color white"></span>
-      <span class="color green"></span>
-      <span class="color brown"></span>
-      <span class="color gold"></span>
-      <span class="color-label">Colors: White, Green, Brown & Gold</span>
-    </div>
-    
   </header>
 
   <section id="story">
@@ -42,53 +34,92 @@
   </section>
 
   <!-- Timeline -->
-   <section id="story">
+  <section id="story">
     <h2 style="margin-left: 20px;">Our Day</h2>
   </section>
 
-  <section class="program-section">
-    <h2>Guest Arrival</h2>
-    <div class="program-time">1:00pm</div>
+  <section id="timeline">
+    <div class="timeline-card">
+      <span class="timeline-icon">
+        <!-- Calendar/Church SVG icon (example, replace as needed) -->
+        <img src="images/church.svg" alt="Church Service">
+      </span>
+      <div class="timeline-details">
+        <div class="timeline-time">10:00 <span>AM</span></div>
+        <div class="timeline-event">Church Service</div>
+      </div>
+    </div>
+    <div class="timeline-card">
+      <span class="timeline-icon">
+        <img src="images/bell.svg" alt="Guest Arrival">
+      </span>
+      <div class="timeline-details">
+        <div class="timeline-time">3:00 <span>PM</span></div>
+        <div class="timeline-event">Guest Arrives At Reception</div>
+      </div>
+    </div>
+    <div class="timeline-card">
+      <span class="timeline-icon">
+        <img src="images/group.svg" alt="Families Entrance">
+      </span>
+      <div class="timeline-details">
+        <div class="timeline-time">3:30 <span>PM</span></div>
+        <div class="timeline-event">Families Of The Couple Entrance</div>
+      </div>
+    </div>
+    <div class="timeline-card">
+      <span class="timeline-icon">
+        <img src="images/couple.svg" alt="Couple Arrival">
+      </span>
+      <div class="timeline-details">
+        <div class="timeline-time">4:00 <span>PM</span></div>
+        <div class="timeline-event">Arrival Of The Couple</div>
+      </div>
+    </div>
+    <div class="timeline-card">
+      <span class="timeline-icon">
+        <img src="images/music.svg" alt="First Dance">
+      </span>
+      <div class="timeline-details">
+        <div class="timeline-time">5:00 <span>PM</span></div>
+        <div class="timeline-event">Couple First Dance</div>
+      </div>
+    </div>
   </section>
-
-  <section class="program-section">
-      <h2>Family of Couples Entrance</h2>
-      <div class="program-time">1:30pm</div>
-  </section>
-
-    <section class="program-section">
-      <h2>Arrival of the Latest Couple</h2>
-      <div class="program-time">2:00pm</div>
-    </section>
-
-    <section class="program-section">
-      <h2>Couple First Dance</h2>
-      <div class="program-time">3:00pm</div>
-    </section>
-
-    <section class="program-section">
-      <h2>Couples Second Entrance</h2>
-      <div class="program-time">4:00pm</div>
-    </section>
-
-    <section class="program-section">
-      <h2>After Party</h2>
-      <div class="program-time">5:30pm</div>
-    </section>
 
 
   
 
-  <section id="venue">
-    <h2 style="margin-left: 20px;">Venue & Live Location</h2>
-    <p>KOBB Civic Centre, Shoprite Enugu</p>
-    <!-- <a class="map-btn" target="_blank" href="https://maps.app.goo.gl/JzN8rnj5GGLq8guN9">View Venue Location</a> -->
-    <div class="map-embed">
-      <iframe src="https://maps.google.com/maps?q=KOBB%20Civic%20Centre%20Shoprite%20Enugu&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <!-- Colors  -->
+  <section id="colours">
+    <h2 class="colours-title">COLOURS<br><span>Of The Day</span></h2>
+    <div class="colours-bg-wrap">
+      <img src="images/colors-bg.png" alt="Bouquet" class="colours-bg">
+      <div class="colour-circles">
+        <div class="colour-dot gold"></div>
+        <div class="colour-dot green"></div>
+        <div class="colour-dot white"></div>
+        <div class="colour-dot brown"></div>
+      </div>
+    </div>
+    <div class="colours-labels">
+      <div class="colour-label">
+        <span class="label-dot gold"></span> Gold
+      </div>
+      <div class="colour-label">
+        <span class="label-dot green"></span> Emerald Green
+      </div>
+      <div class="colour-label">
+        <span class="label-dot white"></span> White
+      </div>
+      <div class="colour-label">
+        <span class="label-dot brown"></span> Brown
+      </div>
     </div>
   </section>
 
+
+  <!-- RSVP  -->
   <section id="rsvp">
     <div class="rsvp-heading">
       <img src="images/floral.png" class="rsvp-floral" alt="">
@@ -109,7 +140,7 @@
     </div>
   </section>
 
-
+  <!-- Message  -->
   <section id="message">
     <h2 style="margin-left: 20px;">Send Us a Message</h2>
     <form action="https://formspree.io/f/movljbkj" method="POST">
@@ -119,6 +150,17 @@
       <button type="submit">Send Message</button>
     </form>
     <p class="form-note">We'd love to hear from you!</p>
+  </section>
+
+    <!-- Venue section  -->
+  <section id="venue">
+    <h2 style="margin-left: 20px;">Venue & Live Location</h2>
+    <p>KOBB Civic Centre, Shoprite Enugu</p>
+    <!-- <a class="map-btn" target="_blank" href="https://maps.app.goo.gl/JzN8rnj5GGLq8guN9">View Venue Location</a> -->
+    <div class="map-embed">
+      <iframe src="https://maps.google.com/maps?q=KOBB%20Civic%20Centre%20Shoprite%20Enugu&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
   </section>
 
   <section id="social">
