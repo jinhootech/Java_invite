@@ -6,6 +6,8 @@
   <title>Chiamaka & Chinedu Wedding</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/3.jpg">
+
 </head>
 <body>
   <header>
@@ -19,27 +21,66 @@
       <span class="color gold"></span>
       <span class="color-label">Colors: White, Green, Brown & Gold</span>
     </div>
-    <div id="countdown"></div>
+    
   </header>
 
   <section id="story">
-    <h2>Our Love Story</h2>
+    <h2 style="margin-left: 20px;">Our Love Story</h2>
     <blockquote>
       “She came for her friend’s wedding, but she left with my heart.” <br>
       <span>And now, we’re planning ours, not just our wedding but it’s for Eternity.</span>
     </blockquote>
-  </section>
-
-  <section id="photos">
-    <h2>Photos</h2>
-    <div class="photos-wrapper">
-      <img src="images/1.jpg" alt="Our photo 1">
-      <img src="images/2.jpg" alt="Our photo 2">
+    <div class="story-image-wrapper">
+      <img src="images/1.jpg" alt="Our Story Photo" class="story-image">
     </div>
   </section>
 
+  <!-- Countdown  -->
+  <section id="story">
+    <h2 style="margin-left: 20px;">Countdown to 28th December</h2>
+    <div id="countdown"></div>
+  </section>
+
+  <!-- Timeline -->
+   <section id="story">
+    <h2 style="margin-left: 20px;">Our Day</h2>
+  </section>
+
+  <section class="program-section">
+    <h2>Guest Arrival</h2>
+    <div class="program-time">1:00pm</div>
+  </section>
+
+  <section class="program-section">
+      <h2>Family of Couples Entrance</h2>
+      <div class="program-time">1:30pm</div>
+  </section>
+
+    <section class="program-section">
+      <h2>Arrival of the Latest Couple</h2>
+      <div class="program-time">2:00pm</div>
+    </section>
+
+    <section class="program-section">
+      <h2>Couple First Dance</h2>
+      <div class="program-time">3:00pm</div>
+    </section>
+
+    <section class="program-section">
+      <h2>Couples Second Entrance</h2>
+      <div class="program-time">4:00pm</div>
+    </section>
+
+    <section class="program-section">
+      <h2>After Party</h2>
+      <div class="program-time">5:30pm</div>
+    </section>
+
+
+  
+
   <section id="venue">
-    <h2>Venue & Live Location</h2>
+    <h2 style="margin-left: 20px;">Venue & Live Location</h2>
     <p>KOBB Civic Centre, Shoprite Enugu</p>
     <!-- <a class="map-btn" target="_blank" href="https://maps.app.goo.gl/JzN8rnj5GGLq8guN9">View Venue Location</a> -->
     <div class="map-embed">
@@ -49,16 +90,28 @@
   </section>
 
   <section id="rsvp">
-    <h2>RSVP</h2>
-    <p>Kindly confirm your attendance:</p>
-    <ul>
-      <li>Chi: <a href="tel:07080516852">07080516852</a></li>
-      <li>Goodness: <a href="tel:08105540863">08105540863</a></li>
-    </ul>
+    <div class="rsvp-heading">
+      <img src="images/floral.png" class="rsvp-floral" alt="">
+      <h2>RSVP</h2>
+      <img src="images/floral.png" class="rsvp-floral" alt="">
+    </div>
+    <div class="rsvp-list">
+      <div class="rsvp-card">
+        <img src="images/avatar.png" alt="RSVP Contact" class="rsvp-avatar">
+        <div class="rsvp-phone">0706 764 0885</div>
+        <div class="rsvp-name">Nwachukwu</div>
+      </div>
+      <div class="rsvp-card">
+        <img src="images/avatar.png" alt="RSVP Contact" class="rsvp-avatar">
+        <div class="rsvp-phone">0810 901 2874</div>
+        <div class="rsvp-name">Emilia</div>
+      </div>
+    </div>
   </section>
 
+
   <section id="message">
-    <h2>Send Us a Message</h2>
+    <h2 style="margin-left: 20px;">Send Us a Message</h2>
     <form action="https://formspree.io/f/movljbkj" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
